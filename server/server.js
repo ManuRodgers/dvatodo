@@ -9,13 +9,8 @@ const app = express();
 // todoRouter
 app.use("/todos", todoRouter);
 app.get("/", (req, res) => {
-  res.json({ name: "manu" });
+  res.json({ number: 20 });
 });
-
-
-
-
-
 
 // static
 app.use(express.static(path.resolve(__dirname, "../src")));
